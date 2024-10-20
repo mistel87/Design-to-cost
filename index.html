@@ -9,23 +9,42 @@
 </head>
 <body>
     <div class="container">
-        <div class="block" onclick="window.location.href='strategic_investments.html'">Strategic Investments</div>
-        <div class="block" onclick="window.location.href='inventory.html'">Inventory</div>
-        <div class="block" onclick="window.location.href='post_merger_integration.html'">Post Merger Integration</div>
-        <div class="block" onclick="window.location.href='sales_conversion.html'">Sales Conversion</div>
-        <div class="block" onclick="window.location.href='financial_closing.html'">Financial Closing</div>
-        <div class="block" onclick="window.location.href='reporting.html'">Reporting</div>
-        <div class="block" onclick="window.location.href='project_completion.html'">Project Completion</div>
-        <div class="block" onclick="window.location.href='compliance.html'">Compliance</div>
-        <div class="block" onclick="window.location.href='production_expenditures.html'">Production Expenditures</div>
-        <div class="block" onclick="window.location.href='order_fulfillment.html'">Order Fulfillment</div>
-        <div class="block" onclick="window.location.href='procurement_effort.html'">Procurement Effort</div>
-        <div class="block" onclick="window.location.href='administration.html'">Administration</div>
-        <div class="block" onclick="window.location.href='it_maintenance.html'">IT Maintenance</div>
-        <div class="block" onclick="window.location.href='data_management.html'">Data Management</div>
-        <div class="block" onclick="window.location.href='qualification.html'">Qualification</div>
-        <div class="block" onclick="window.location.href='ecosystem_management.html'">Ecosystem Management</div>
+        <div class="block" data-modal="modal-strategic-investments">Strategic Investments</div>
+        <div class="block" data-modal="modal-inventory">Inventory</div>
+        <div class="block" data-modal="modal-post-merger-integration">Post Merger Integration</div>
+        <div class="block" data-modal="modal-sales-conversion">Sales Conversion</div>
+        <div class="block" data-modal="modal-financial-closing">Financial Closing</div>
+        <div class="block" data-modal="modal-reporting">Reporting</div>
+        <div class="block" data-modal="modal-project-completion">Project Completion</div>
+        <div class="block" data-modal="modal-compliance">Compliance</div>
+        <div class="block" data-modal="modal-production-expenditures">Production Expenditures</div>
+        <div class="block" data-modal="modal-order-fulfillment">Order Fulfillment</div>
+        <div class="block" data-modal="modal-procurement-effort">Procurement Effort</div>
+        <div class="block" data-modal="modal-administration">Administration</div>
+        <div class="block" data-modal="modal-it-maintenance">IT Maintenance</div>
+        <div class="block" data-modal="modal-data-management">Data Management</div>
+        <div class="block" data-modal="modal-qualification">Qualification</div>
+        <div class="block" data-modal="modal-ecosystem-management">Ecosystem Management</div>
     </div>
+
+    <!-- Modal Structure (Hidden Initially) -->
+    <div class="modal" id="modal-strategic-investments">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Strategic Investments</h2>
+            <p>Strategic investments involve capital spent on growth initiatives like new facilities or mergers and acquisitions...</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-inventory">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inventory</h2>
+            <p>Inventory management helps track stock levels, reduce excess inventory, and increase overall operational efficiency...</p>
+        </div>
+    </div>
+
+    <!-- Add similar modal divs for other blocks here -->
 
     <script src="script.js"></script>
 </body>
