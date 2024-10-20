@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.block {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.block:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
