@@ -57,6 +57,15 @@ body {
     margin-top: 20px;
 }
 
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.column p {
+    margin: 0;
+}
+
 .close {
     color: #aaa;
     float: right;
