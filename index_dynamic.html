@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Blocks with Deep-Dive Modals</title>
+    <link rel="stylesheet" href="styles_dynamic.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="block" data-modal="modal-strategic-investments">
+            <div class="block-content">
+                Strategic Investments
+                <div class="hover-description">Explore growth initiatives and capital allocation</div>
+            </div>
+        </div>
+        <div class="block" data-modal="modal-inventory">
+            <div class="block-content">
+                Inventory
+                <div class="hover-description">Learn about inventory tracking and optimization</div>
+            </div>
+        </div>
+        <div class="block" data-modal="modal-post-merger-integration">
+            <div class="block-content">
+                Post Merger Integration
+                <div class="hover-description">See strategies for smooth post-merger integration</div>
+            </div>
+        </div>
+        <!-- More blocks go here -->
+    </div>
+
+    <!-- Example modal for Strategic Investments -->
+    <div class="modal" id="modal-strategic-investments">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Strategic Investments</h2>
+            <p>Strategic investments involve capital spent on growth initiatives like new facilities or mergers and acquisitions...</p>
+            <div class="diagram">
+                <img src="diagram1_placeholder.png" alt="Diagram 1">
+                <img src="diagram2_placeholder.png" alt="Diagram 2">
+            </div>
+        </div>
+    </div>
+
+    <!-- Similar modal structure for other blocks can be added here -->
+
+    <script src="script_dynamic.js"></script>
+</body>
+</html>
