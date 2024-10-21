@@ -1,50 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Blocks with Deep-Dive Modals</title>
-    <link rel="stylesheet" href="styles_dynamic.css">
+    <title>Building Blocks</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="block" data-modal="modal-strategic-investments">
-            <div class="block-content">
-                Strategic Investments
-                <div class="hover-description">Explore growth initiatives and capital allocation</div>
-            </div>
-        </div>
-        <div class="block" data-modal="modal-inventory">
-            <div class="block-content">
-                Inventory
-                <div class="hover-description">Learn about inventory tracking and optimization</div>
-            </div>
-        </div>
-        <div class="block" data-modal="modal-post-merger-integration">
-            <div class="block-content">
-                Post Merger Integration
-                <div class="hover-description">See strategies for smooth post-merger integration</div>
-            </div>
-        </div>
-        <!-- More blocks go here -->
+    <div class="container">
+        <div class="block" onclick="openModal('modal-strategic-investments')">Strategic Investments</div>
+        <div class="block" onclick="openModal('modal-inventory')">Inventory</div>
+        <div class="block" onclick="openModal('modal-post-merger-integration')">Post Merger Integration</div>
+        <!-- Add more blocks similarly -->
     </div>
 
-    <!-- Example modal for Strategic Investments -->
-    <div class="modal" id="modal-strategic-investments">
+    <!-- Modal Structure for Strategic Investments -->
+    <div id="modal-strategic-investments" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closeModal('modal-strategic-investments')">&times;</span>
             <h2>Strategic Investments</h2>
-            <p>Strategic investments involve capital spent on growth initiatives like new facilities or mergers and acquisitions...</p>
-            <div class="diagram">
-                <img src="diagram1_placeholder.png" alt="Diagram 1">
-                <img src="diagram2_placeholder.png" alt="Diagram 2">
-            </div>
+            <p>Long description about Strategic Investments goes here. Explain the key factors, success stories, and deep-dive analysis of strategic investments within the company.</p>
         </div>
     </div>
 
-    <!-- Similar modal structure for other blocks can be added here -->
+    <!-- Modal Structure for Inventory -->
+    <div id="modal-inventory" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-inventory')">&times;</span>
+            <h2>Inventory</h2>
+            <p>Long description about Inventory management and how it impacts operational efficiency, stock optimization, and cost control.</p>
+        </div>
+    </div>
 
-    <script src="script_dynamic.js"></script>
+    <!-- More modals can be added similarly for other blocks -->
+
+    <script src="script.js"></script>
 </body>
 </html>
