@@ -1,21 +1,19 @@
+// Function to open modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+}
 
-// JavaScript to handle modal opening and closing
-document.querySelectorAll('.block').forEach(block => {
-    block.addEventListener('click', () => {
-        const modalId = block.getAttribute('data-modal');
-        document.getElementById(modalId).style.display = 'block';
-    });
-});
+// Function to close modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
 
-document.querySelectorAll('.close').forEach(closeBtn => {
-    closeBtn.addEventListener('click', () => {
-        closeBtn.parentElement.parentElement.style.display = 'none';
-    });
-});
-
-// Close the modal if user clicks outside of it
+// Close the modal if the user clicks outside of the modal content
 window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.style.display = 'none';
-    }
-};
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
